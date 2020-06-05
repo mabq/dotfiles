@@ -36,21 +36,21 @@ fi;
 brew install wget --with-iri
 
 # Install GnuPG to enable PGP-signing commits.
-brew install gnupg
+# brew install gnupg
 
 # Install more recent versions of some macOS tools.
 brew install vim --with-override-system-vi
 brew install grep
 brew install openssh
-brew install screen
-brew install php
-brew install gmp
+# brew install screen
+# brew install php
+# brew install gmp
 
 # Install font tools.
-brew tap bramstein/webfonttools
-brew install sfnt2woff
-brew install sfnt2woff-zopfli
-brew install woff2
+# brew tap bramstein/webfonttools
+# brew install sfnt2woff
+# brew install sfnt2woff-zopfli
+# brew install woff2
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 # brew install aircrack-ng
@@ -103,7 +103,7 @@ brew install tree
 
 # Install binaries
 brew cask install colorsnapper
-brew cask install firefox
+# brew cask install firefox
 brew cask install google-chrome
 # brew cask install google-photos-backup-and-sync
 # brew cask install figma
@@ -121,7 +121,8 @@ brew cask install vlc
 brew cask install whatsapp
 
 # Install manually
-# uTorrent, ulysses, rocket, pdfExpert, mindNode, microsoft remoteDesktop, chrome canary, 
+# uTorrent, microsoft remoteDesktop, chrome canary, firefox developer edition
+# ulysses, rocket, pdfExpert, mindNode
 
 # Remove outdated versions from the cellar.
 brew cleanup
