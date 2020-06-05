@@ -1,3 +1,9 @@
+[user]
+
+  # Git credentials
+  name = mabq
+  email = alejandro.banderas@me.com
+
 [alias]
 
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
