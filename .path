@@ -1,0 +1,14 @@
+# Use coreutils installed by brew — https://formulae.brew.sh/formula/coreutils#default
+PATH="$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH"
+
+# Use findutils installed by brew - https://formulae.brew.sh/formula/findutils#default
+PATH="$(brew --prefix)/opt/findutils/libexec/gnubin:$PATH"
+
+# Use sed installed by brew - https://formulae.brew.sh/formula/gnu-sed#default
+PATH="$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"
+
+# Use grep installed by brew - https://formulae.brew.sh/formula/grep#default
+PATH="$(brew --prefix)/opt/grep/libexec/gnubin:$PATH"
+
+# Export path
+export PATH
