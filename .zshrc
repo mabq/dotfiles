@@ -1,10 +1,11 @@
-# Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH";
+# Info:
+#   http://zsh.sourceforge.net/Doc/Release/Files.html#Startup_002fShutdown-Files
+#   https://scriptingosx.com/2019/06/moving-to-zsh-part-2-configuration-files/#zsh%20Configuration%20Files
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
-for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
+for file in ~/.{path,exports,aliases,functions,extra}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
@@ -48,3 +49,15 @@ unset file;
 
 # Add `killall` tab completion for common apps
 # complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
+
+# -----------------------------------------------------------------------------
+
+# Pure prompt
+#   Initialize the prompt system (if not so already)
+# autoload -U promptinit; promptinit
+#   Options (https://github.com/sindresorhus/pure#example)
+#     Turn on git stash status
+# zstyle :prompt:pure:git:stash show yes
+#   Choose pure prompt
+# prompt pure
+
