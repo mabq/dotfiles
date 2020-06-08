@@ -1,3 +1,5 @@
+# This settings apply to the bash shell, not zsh.
+
 # Make Tab autocomplete regardless of filename case
 set completion-ignore-case on
 
