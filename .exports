@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Make vim the default editor.
-export EDITOR='nano';
+export EDITOR='vim';
 
 # Enable persistent REPL history for `node`.
 export NODE_REPL_HISTORY=~/.node_history;
@@ -23,8 +23,9 @@ export HISTCONTROL='ignoreboth';
 export LANG='en_US.UTF-8';
 export LC_ALL='en_US.UTF-8';
 
-# Highlight section titles in manual pages.
-export LESS_TERMCAP_md="${yellow}";
+# Highlight section titles in manual pages (edited so that it works on Zsh too)
+# export LESS_TERMCAP_md="${yellow}";
+export LESS_TERMCAP_md=$(printf "\e[38;5;136m");
 
 # Don’t clear the screen after quitting a manual page.
 export MANPAGER='less -X';

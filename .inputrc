@@ -1,4 +1,6 @@
-# This settings apply to the bash shell, not zsh.
+###############################################################################
+# Auto-completion configuration options for the Bash shell (do not apply for Zsh).
+###############################################################################
 
 # Make Tab autocomplete regardless of filename case
 set completion-ignore-case on

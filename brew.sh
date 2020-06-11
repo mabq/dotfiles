@@ -72,7 +72,7 @@ brew install curl
 # brew install moreutils
 
 # vim —— Vi 'workalike' with many additional features
-# brew install vim
+brew install vim
 
 # screen —— Terminal multiplexer with VT100/ANSI terminal emulation
 # brew install screen
@@ -82,6 +82,9 @@ brew install curl
 
 # gmp —— GNU multiple precision arithmetic library
 # brew install gmp
+
+# zsh-syntax-highlighting —— Fish shell like syntax highlighting for zsh
+# brew install zsh-syntax-highlighting
 
 ###############################################################################
 # Install font tools — see https://github.com/bramstein/homebrew-webfonttools
@@ -201,10 +204,11 @@ brew install git
 # brew install lynx
 
 # p7zip —— 7-Zip (high compression file archiver) implementation
-# brew install p7zip
+brew install p7zip
 
 # pigz —— Parallel gzip
-# brew install pigz
+#     (required by the targz function —— see `.functions`)
+brew install pigz
 
 # pv —— Monitor data's progress through a pipe
 # brew install pv
@@ -231,7 +235,8 @@ brew install tree
 # brew install vbindiff
 
 # zopfli —— New zlib (gzip, deflate) compatible compressor
-# brew install zopfli
+#     (required by the targz function —— see `.functions`)
+brew install zopfli
 
 ###############################################################################
 # Install casks

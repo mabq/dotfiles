@@ -7,6 +7,7 @@ Follow these instructions when setting up a new Mac (modified version of [Tanias
 ## 1. Getting Started
 The first thing you should do is update macOS to get the latest security updates and patches.
 
+
 ## 2. Homebrew
 Install [Homebrew](https://brew.sh/) — will also install macos command-line tools (it will take some time).
 
@@ -14,6 +15,7 @@ Install [Homebrew](https://brew.sh/) — will also install macos command-line to
 # once installed, make sure everything is up to date.
 brew update
 ```
+
 
 ## 3. Dotfiles
 To install:
@@ -48,8 +50,19 @@ cd ~ && ./brew.sh
 cd ~ && ./.macos
 ```
 
+
+## 4. Clone oh-my-zsh
+
+```bash
+git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
+```
+
+The `.zshrh` file is part of the dot files.
+
+
 ## 4. SSH keys
 Now that `git` is installed, follow the instructions on [Connecting to GitHub with SSH](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh).
+
 
 ## 5. Install node
 
