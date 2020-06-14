@@ -56,7 +56,7 @@ brew install gnu-sed
 brew install wget
 
 # gnupg —— GNU Pretty Good Privacy (PGP) package
-#     enables signing git commits, see https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work
+#     enables signing commits, see https://help.github.com/en/github/authenticating-to-github/managing-commit-signature-verification
 brew install gnupg
 
 # grep —— GNU grep, egrep and fgrep 🔑

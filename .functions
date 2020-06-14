@@ -169,3 +169,8 @@ function o() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+# Open man pages in a different window
+function xmanpage() {
+  open x-man-page://$@;
+}

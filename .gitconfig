@@ -3,6 +3,7 @@
   # Git credentials
   name = mabq
   email = alejandro.banderas@me.com
+  signingkey = 298FE47DB8424971
 
 [alias]
 
@@ -144,7 +145,7 @@
 [commit]
 
 	# https://help.github.com/articles/signing-commits-using-gpg/
-	# gpgsign = true
+	gpgsign = true
 
 [diff]
 
