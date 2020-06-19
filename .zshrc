@@ -72,22 +72,25 @@ plugins=(extract urltools z)
 
 source $ZSH/oh-my-zsh.sh
 
+
 ###############################################################################
 # Custom configuration
 ###############################################################################
 
 # Load
-# * ~/.path can be used to extend `$PATH`.
-# * ~/.extra can be used for other settings you don’t want to commit.
+# └── ~/.path can be used to extend `$PATH`.
+# └── ~/.extra can be used for other settings you don’t want to commit.
 for file in ~/.{path,exports,aliases,functions,extra}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
 
-# Pure prompt —— https://github.com/sindresorhus/pure
+# Pure prompt
+# └── See https://github.com/sindresorhus/pure
 fpath+=$HOME/.zsh/pure
 autoload -U promptinit; promptinit
 prompt pure
 
-# Enable Zsh-syntax-highlighting
+# Zsh-syntax-highlighting
+# └── must come after `source $ZSH/oh-my-zsh.sh`
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

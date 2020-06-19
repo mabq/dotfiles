@@ -1,71 +1,124 @@
-# Manu's dotfiles
+# Dotfiles
 
-This repo is a modified version of [Mathias’s dotfiles](https://github.com/mathiasbynens/dotfiles).
+Based on [Mathias’s dotfiles](https://github.com/mathiasbynens/dotfiles) and [Tanias’s article](https://www.taniarascia.com/setting-up-a-brand-new-mac-for-development/).
 
-Follow these instructions when setting up a new Mac (modified version of [Tanias’s article](https://www.taniarascia.com/setting-up-a-brand-new-mac-for-development/)):
 
 ## 1. Getting Started
-The first thing you should do is update macOS to get the latest security updates and patches.
+   
+After initial installation check for updates to get the latest security updates and patches.
 
 
 ## 2. Homebrew
-Install [Homebrew](https://brew.sh/) — will also install macos command-line tools (it will take some time).
+
+Install [Homebrew](https://brew.sh/) (will also install macos command-line tools which will take some time).
 
 ```bash
-# once installed, make sure everything is up to date.
-brew update
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
 
 ## 3. Dotfiles
-To install:
+
+Clone the repo into the `~/Projects` folder and run the `bootstrap.sh` script
+to copy the dotfiles into the home directory.
 
 ```bash
-# Make sure the `Projects` directory exist in the home folder
 cd ~ && mkdir "Projects"
-
-# Clone the repo and execute the bootstrap shell script
-cd ~/Projects && clone https://github.com/mabq/dotfiles.git && cd dotfiles && source bootstrap.sh
-# ...now the dotfiles should be in your home directory
+cd ~/Projects && clone https://github.com/mabq/dotfiles.git && source dotfiles/bootstrap.sh
 ```
 
-To update (if any changes are made you should push them to the remote repo first):
-```bash
-# The bootstrap script will pull the latest changes from the remote repo
-cd ~/Projects/dotfiles && source bootstrap.sh
-```
-
-Alternatively, to update while avoiding the confirmation prompt:
+To update (the script will pull from the remote repo, so make sure you push any changes first):
 ```bash
 set -- -f; cd ~/Projects/dotfiles && source bootstrap.sh
 ```
 
-### 3.1. Install Homebrew formulae and casks
+
+## 4. Install Command-line Tools and Apps
+
+Run the `brew.sh` script:
+
 ```bash
 cd ~ && ./brew.sh
 ```
 
-### 3.2. Apply sensible macOS defaults
+Clone the pure prompt repo (.zshrc is already configured):
+
 ```bash
-cd ~ && ./.macos
+mkdir -p "$HOME/.zsh"
+git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
 ```
 
-
-## 4. Clone oh-my-zsh
+Manually install `oh-my-zsh` (`.zshrc` is already configured):
 
 ```bash
 git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
 ```
 
-The `.zshrh` file is part of the dot files.
+Apply Snazzy theme manually (inside the `~/init` directory).
 
 
-## 4. SSH keys
-Now that `git` is installed, follow the instructions on [Connecting to GitHub with SSH](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh).
+## 5. Node.js
+
+### 5.1 Install
+Use [Node Version Manager (nvm)](https://github.com/nvm-sh/nvm/blob/master/README.md) 
+to install Node.js. This allows you to easily switch between Node versions, which is essential.
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
+```
+
+Install the latest version:
+
+```bash
+nvm install node
+```
+
+Restart terminal and run the final command:
+
+```bash
+nvm use node
+```
+
+Confirm that you are using the latest version of Node and npm:
+
+```bash
+node -v
+npm -v
+```
+
+### 5.2 Update
+
+For later, here's how to update nvm.
+
+```bash
+nvm install node --reinstall-packages-from=node
+```
+
+### 5.3 Change version
+
+Here's how to switch to another version and use it:
+
+```bash
+nvm install xx.xx
+nvm use xx.xx
+```
+
+And to set the default:
+
+```bash
+nvm alias default xx.xx
+```
 
 
-## 5. Install node
+## 6. SSH keys
+Follow the instructions on [Connecting to GitHub with SSH](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh).
 
 
-### 5.1 Install global packages
+## 7. Apply sensible macOS defaults
+
+Run the script `.macos` and re-start:
+
+```bash
+cd ~ && ./.macos
+```
 
