@@ -239,7 +239,7 @@ brew install zsh-syntax-highlighting
 
 # awscli
 # └── Official Amazon AWS command-line interface
-# brew install awscli
+brew install awscli
 
 # exiv2
 # └── EXIF and IPTC metadata manipulation library and tools

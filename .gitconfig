@@ -1,9 +1,12 @@
 [user]
 
   # Git credentials
-  name = mabq
+  name = Alejandro Banderas
   email = alejandro.banderas@me.com
-  signingkey = 298FE47DB8424971
+
+[github]
+
+  user = mabq
 
 [alias]
 

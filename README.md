@@ -41,19 +41,6 @@ Run the `brew.sh` script:
 cd ~ && ./brew.sh
 ```
 
-Clone the pure prompt repo (.zshrc is already configured):
-
-```bash
-mkdir -p "$HOME/.zsh"
-git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
-```
-
-Manually install `oh-my-zsh` (`.zshrc` is already configured):
-
-```bash
-git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
-```
-
 Apply Snazzy theme manually (inside the `~/init` directory).
 
 
