@@ -24,7 +24,7 @@ to copy the dotfiles into the home directory.
 
 ```bash
 cd ~ && mkdir "Projects"
-cd ~/Projects && clone https://github.com/mabq/dotfiles.git && source dotfiles/bootstrap.sh
+cd ~/Projects && git clone https://github.com/mabq/dotfiles.git && source dotfiles/bootstrap.sh
 ```
 
 To update (the script will pull from the remote repo, so make sure you push any changes first):
