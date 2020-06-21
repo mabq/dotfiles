@@ -3,6 +3,7 @@
   # Git credentials
   name = Alejandro Banderas
   email = alejandro.banderas@me.com
+  signingkey=8F1DBE9FFA065CBD
 
 [github]
 
@@ -147,7 +148,7 @@
 
 [commit]
 
-	# https://help.github.com/articles/signing-commits-using-gpg/
+	# https://help.github.com/en/github/authenticating-to-github/managing-commit-signature-verification
 	gpgsign = true
 
 [diff]
