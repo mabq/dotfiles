@@ -97,9 +97,9 @@ nvm alias default xx.xx
 ```
 
 
-## 6. SSH keys
-Follow the instructions on [Connecting to GitHub with SSH](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh).
-
+## 6. Github
+- [Connecting to Github with SSH](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
+- [Managing Commit Signature Verification](https://help.github.com/en/github/authenticating-to-github/managing-commit-signature-verification)
 
 ## 7. Apply sensible macOS defaults
 
