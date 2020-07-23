@@ -149,6 +149,7 @@
 [commit]
 
 	# https://help.github.com/en/github/authenticating-to-github/managing-commit-signature-verification
+  # To avoid having to enter the passphrase everytime see https://docs.github.com/en/github/authenticating-to-github/signing-commits
 	gpgsign = true
 
 [diff]
