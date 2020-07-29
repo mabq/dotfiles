@@ -19,17 +19,16 @@ Install [Homebrew](https://brew.sh/) (will also install macos command-line tools
 
 ## 3. Dotfiles
 
-Clone the repo into the `~/Projects` folder and run the `bootstrap.sh` script
-to copy the dotfiles into the home directory.
+Clone the repo into the `~/Github` folder and run the `bootstrap.sh` script to copy the dotfiles into the home directory.
 
 ```bash
-cd ~ && mkdir "Projects"
-cd ~/Projects && git clone https://github.com/mabq/dotfiles.git && source dotfiles/bootstrap.sh
+cd ~ && mkdir "Github"
+cd ~/Github && git clone https://github.com/mabq/dotfiles.git && source dotfiles/bootstrap.sh
 ```
 
 To update (the script will pull from the remote repo, so make sure you push any changes first):
 ```bash
-set -- -f; cd ~/Projects/dotfiles && source bootstrap.sh
+set -- -f; cd ~/Github/dotfiles && source bootstrap.sh
 ```
 
 
